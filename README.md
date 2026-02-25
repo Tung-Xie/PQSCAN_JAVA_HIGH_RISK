@@ -1,4 +1,6 @@
 # PQSCAN_JAVA_HIGH_RISK
-模擬舊型銀行系統，大量使用 NIST 建議淘汰的演算法。
-- 檔案結構：包含 Config 與 Service 層，模擬真實調用邏輯。
-- 重點測試：RSA-1024, 3DES, MD5, secp160r1。
+### 🎯 預期掃描資產 (Critical/High Risk):
+- **PKI**: RSA (1024-bit), RSA (2048-bit), DSA
+- **Cipher**: DESede (3DES), RC4
+- **Hash**: MD5, SHA-1, SHA-224
+- **KEX/Curves**: secp160r1, secp192r1, sect163k1, ffdhe2048
